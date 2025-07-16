@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JAZZ CREATION</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #fff9f5;
+      color: #333;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    header {
+      background: linear-gradient(270deg, #ffb3c6, #ffc6e2, #c5deff, #e0ffe9);
+      background-size: 800% 800%;
+      text-align: center;
+      padding: 60px 20px;
+      animation: gradientFlow 12s ease infinite;
+    }
+
+    @keyframes gradientFlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header img {
+      width: 130px;
+      border-radius: 50%;
+      border: 4px solid #a3338a;
+      transition: transform 0.4s ease;
+    }
+
+    header img:hover {
+      transform: scale(1.08) rotate(3deg);
+    }
+
+    header h1 {
+      font-size: 3.2rem;
+      color: #4b1e59;
+      font-weight: 700;
+      margin-top: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #5e3b4f;
+      margin-top: 8px;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .about {
+      background: #fff2f7;
+    }
+
+    .about h2,
+    .highlights h2,
+    .contact h2 {
+      font-size: 2.5rem;
+      color: #a3338a;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      max-width: 750px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      color: #593c5c;
+    }
+
+    .highlights {
+      background: #fff9e6;
+    }
+
+    .highlight-boxes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .box {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 30px 20px;
+      width: 260px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .box:hover {
+      transform: translateY(-8px);
+    }
+
+    .box h3 {
+      font-size: 1.3rem;
+      color: #a34794;
+      margin-bottom: 10px;
+    }
+
+    .box p {
+      font-size: 0.98rem;
+      color: #5a4a5a;
+    }
+
+    .contact {
+      background: linear-gradient(135deg, #ffd6ec, #d4f4dd);
+      border-radius: 20px;
+      margin: 60px auto;
+      padding: 50px 20px;
+      max-width: 750px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .contact-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .contact-icons a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #a3338a;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .contact-icons a:hover {
+      transform: scale(1.05);
+      background: #c84fa8;
+    }
+
+    .contact-icons img {
+      width: 22px;
+      height: 22px;
+    }
+
+    footer {
+      background: #ffe8f0;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.95rem;
+      color: #555;
+      border-top: 4px solid #ffb3c6;
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.2rem; }
+      .box { width: 90%; }
+      .contact-icons { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="https://www.instagram.com/do_artwith_jazz/" target="_blank">
+      <img src="C:\Users\Vaibhavi\OneDrive\Documents\craftlogo.jpg" alt="Jazz Creation Logo">
+    </a>
+    <h1>JAZZ CREATION</h1>
+    <p>Custom handmade crafts that touch the heart 💖</p>
+  </header>
+
+  <section class="about">
+    <h2>About Us</h2>
+    <p>
+      Welcome to <strong>Jazz Creation</strong>, where creativity meets craftsmanship! We specialize in vibrant <strong>paper crafts</strong>, <strong>customized gift orders</strong>, and take special <strong>craft orders</strong> for your events and celebrations. Whether it's a birthday, festival, or surprise, we make it unforgettable.
+    </p>
+  </section>
+
+  <section class="highlights">
+    <h2>What We Craft</h2>
+    <div class="highlight-boxes">
+      <div class="box">
+        <h3>🎁 Custom Gift Orders</h3>
+        <p>Made-to-order gifts like explosion boxes, name tags, and decorated albums – all personalized with love.</p>
+      </div>
+      <div class="box">
+        <h3>✂️ Paper Crafts</h3>
+        <p>Creative paper art like handmade cards, bookmarks, wall hangings & DIY decor for every occasion.</p>
+      </div>
+      <div class="box">
+        <h3>📝 Craft Orders Welcome</h3>
+        <p>Want something special? We take custom craft orders for events, decorations, school projects & more!</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Connect with Me</h2>
+    <div class="contact-icons">
+      <a href="https://www.instagram.com/do_artwith_jazz/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"> Instagram
+      </a>
+      <a href="https://youtube.com/@jasmeetkaur9040?si=L0K73xgBXbJL8C81" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"> YouTube
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 <strong>JAZZ CREATION</strong> | Created by Jasmeet Kaur | All rights reserved 🎨</p>
+  </footer>
+
+</body>
+</html>
+
+
+
